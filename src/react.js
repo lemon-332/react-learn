@@ -1,5 +1,6 @@
 import { REACT_ELEMENT } from "./constant";
 import { wrapToVdom } from "./utils";
+import { Component } from "./component";
 
 function createElement(type, config, children) {
   let ref; // ref是用来引用此元素的
@@ -31,6 +32,7 @@ function createElement(type, config, children) {
 
 const React = {
   createElement,
+  Component,
 };
 
 export default React;
